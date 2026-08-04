@@ -74,4 +74,35 @@ fn main() {
         // NaN 转换为 u8 是 0
         println!("   NaN 转换为 u8 是：{}", f32::NAN.to_int_unchecked::<u8>());
     }
+
+    // 带后缀的字面值，其类型在初始化时确定
+    let x = 1u8;
+    let y = 2u32;
+    let z = 3f32;
+
+    // 无后缀的字面值，其类型取决于使用方式
+    let i = 1;
+    let f = 1.0;
+
+    // `size_of_val` 返回变量的字节大小
+    println!("`x` 的字节大小：{}", std::mem::size_of_val(&x));
+    println!("`y` 的字节大小：{}", std::mem::size_of_val(&y));
+    println!("`z` 的字节大小：{}", std::mem::size_of_val(&z));
+    println!("`i` 的字节大小：{}", std::mem::size_of_val(&i));
+    println!("`f` 的字节大小：{}", std::mem::size_of_val(&f));
+
+        // 通过类型注解，编译器得知 `elem` 的类型为 u8 
+    let elem = 5u8;
+
+    // 创建一个空向量（可增长的数组）
+    let mut vec = Vec::new();
+    // 此时编译器还不知道 `vec` 的具体类型，
+    // 只知道它是某种类型的向量（`Vec<_>`）。
+
+    // 将 `elem` 插入向量中
+    vec.push(elem);
+    // 啊哈！现在编译器知道 `vec` 是 `u8` 类型的向量（`Vec<u8>`）
+    // TODO ^ 尝试注释掉 `vec.push(elem)` 这一行
+
+    println!("{:?}", vec);
 }
