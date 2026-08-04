@@ -2,7 +2,7 @@
 name = "hello_world"
 version = "0.1.0"
 edition = "2024"
-default-run = "display2"
+default-run = "format"
 
 [[bin]]
 name = "hello_world"
@@ -23,5 +23,17 @@ path = "src/display.rs"
 [[bin]]
 name = "display2"
 path = "src/display2.rs"
+
+[[bin]]
+name = "display_ex"
+path = "src/display_ex.rs"
+
+[[bin]]
+name = "display_test"
+path = "src/display_test.rs"
+
+[[bin]]
+name = "format"
+path = "src/format.rs"
 
 [dependencies]
