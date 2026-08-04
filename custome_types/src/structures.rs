@@ -1,5 +1,5 @@
 // An attribute to hide warnings for unused code.
-#![allow(dead_code)]
+#![allow(dead_code)] // 给编译器看的，！是整个文件，不写，就是作用于下一个数据
 
 #[derive(Debug)]
 struct Person {
@@ -17,7 +17,7 @@ struct Pair(i32, f32);
 struct Point {
     x: f32,
     y: f32,
-}
+} // ; 和 {} 都用来"结束"，但用哪个看有没有块,struct成块，就无需；一句话：有 {} 就不用 ;，没 {} 就要 ;。
 
 // Structs can be reused as fields of another struct
 struct Rectangle {

@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use std::fmt;
 
 // 1. 一个包含两个字段的结构体

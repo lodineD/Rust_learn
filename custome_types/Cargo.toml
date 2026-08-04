@@ -2,7 +2,7 @@
 name = "custome_types"
 version = "0.1.0"
 edition = "2024"
-default-run = "structures"
+default-run = "ownership"
 
 [[bin]]
 name = "main"
@@ -11,6 +11,10 @@ path = "src/main.rs"
 [[bin]]
 name = "structures"
 path = "src/structures.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/ownership.rs"
 
 
 [dependencies]

@@ -1,5 +1,6 @@
 // Derive the `fmt::Debug` implementation for `Structure`. `Structure`
 // is a structure which contains a single `i32`.
+#![allow(dead_code)]
 #[derive(Debug)]
 struct Structure(i32);
 
