@@ -1,0 +1,15 @@
+[package]
+name = "variable_bindings"
+version = "0.1.0"
+edition = "2024"
+default-run = "Mutability"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "Mutability"
+path = "src/Mutability.rs"
+
+[dependencies]
