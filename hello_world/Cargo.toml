@@ -1,0 +1,27 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2024"
+default-run = "display2"
+
+[[bin]]
+name = "hello_world"
+path = "src/main.rs"
+
+[[bin]]
+name = "debug"
+path = "src/debug.rs"
+
+[[bin]]
+name = "debug2"
+path = "src/debug2.rs"
+
+[[bin]]
+name = "display"
+path = "src/display.rs"
+
+[[bin]]
+name = "display2"
+path = "src/display2.rs"
+
+[dependencies]
