@@ -2,7 +2,7 @@
 name = "custome_types"
 version = "0.1.0"
 edition = "2024"
-default-run = "ownership"
+default-run = "Enums_linked-list"
 
 [[bin]]
 name = "main"
@@ -16,5 +16,24 @@ path = "src/structures.rs"
 name = "ownership"
 path = "src/ownership.rs"
 
+[[bin]]
+name = "Enums"
+path = "src/Enums.rs"
+
+[[bin]]
+name = "Enums_use"
+path = "src/Enums_use.rs"
+
+[[bin]]
+name = "Enums_Clike"
+path = "src/Enums_Clike.rs"
+
+[[bin]]
+name = "Enums_linked-list"
+path = "src/Enums_linked-list.rs"
+
+[[bin]]
+name = "constants"
+path = "src/constants.rs"
 
 [dependencies]
