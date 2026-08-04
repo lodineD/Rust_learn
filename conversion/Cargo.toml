@@ -1,0 +1,20 @@
+[package]
+name = "conversion"
+version = "0.1.0"
+edition = "2024"
+default-run = "String"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "Tryfrom_Tryinto"
+path = "src/Tryfrom_Tryinto.rs"
+
+[[bin]]
+name = "String"
+path = "src/String.rs"
+
+
+[dependencies]
