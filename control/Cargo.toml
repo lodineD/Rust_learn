@@ -1,0 +1,27 @@
+[package]
+name = "control"
+version = "0.1.0"
+edition = "2024"
+default-run = "match"
+
+[[bin]]
+name = "loop"
+path = "src/loop.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "forandrange"
+path = "src/forandrange.rs"
+
+[[bin]]
+name = "match"
+path = "src/match.rs"
+
+[[bin]]
+name = "match_guards"
+path = "src/match_guards.rs"
+
+[dependencies]
