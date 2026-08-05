@@ -1,0 +1,19 @@
+[package]
+name = "functions"
+version = "0.1.0"
+edition = "2024"
+default-run = "Closures"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "method"
+path = "src/method.rs"
+
+[[bin]]
+name = "Closures"
+path = "src/Closures.rs"
+
+[dependencies]

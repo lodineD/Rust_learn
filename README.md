@@ -15,6 +15,7 @@
 ### 📅 2026-08-05（第二天）
 
 - **control**（流程控制：loop/for/match/守卫/if-let/while-let）
+- **functions**（函数与方法：fn、闭包、&self/&mut self）
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&width=435&lines=%E6%AD%A3%E5%9C%A8%E8%BF%9B%E8%A1%8C%E4%B8%AD...)](https://git.io/typing-svg)
 
