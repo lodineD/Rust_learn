@@ -2,7 +2,7 @@
 name = "control"
 version = "0.1.0"
 edition = "2024"
-default-run = "match"
+default-run = "whilelet"
 
 [[bin]]
 name = "loop"
@@ -23,5 +23,17 @@ path = "src/match.rs"
 [[bin]]
 name = "match_guards"
 path = "src/match_guards.rs"
+
+[[bin]]
+name = "match_binding"
+path = "src/match_binding.rs"
+
+[[bin]]
+name = "iflet"
+path = "src/iflet.rs"
+
+[[bin]]
+name = "whilelet"
+path = "src/whilelet.rs"
 
 [dependencies]
