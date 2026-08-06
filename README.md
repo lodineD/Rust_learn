@@ -8,7 +8,7 @@
 |------|---------|
 | **2026-08-04** | 第一天：hello_world、primitives、custome_types、variable_bindings、types、conversion |
 | **2026-08-05** | 第二天：control、functions（基础） |
-| **2026-08-06** | 第三天：functions（闭包与高阶函数）、modules（模块与可见性）、crates（库与 crate） |
+| **2026-08-06** | 第三天：functions（闭包与高阶函数）、modules（模块与可见性）、crates（库与 crate）、generics（泛型） |
 
 ### 📅 第一天（2026-08-04）
 
@@ -29,6 +29,7 @@
 - **functions**（闭包、高阶函数、发散函数）
 - **modules**（模块 `mod`、可见性 `pub`、`self`/`super`/`crate`、文件拆分、`use` 导入）
 - **crates**（crate 与库：创建库 `rary`、引用库模块、`mod` 声明）
+- **generics**（泛型：泛型函数、泛型 trait）
 
 #### 闭包总结
 

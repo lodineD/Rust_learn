@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2024"
 authors = ["lodineD"]
 
+# 本质上这个部分是依赖，可以是官方，可以是第三方，也可以是自己
 [dependencies]
-clap = "2.27.1" # 来自 crates.io
+clap = "4.6.4" # 来自 crates.io
 rand = { git = "https://github.com/rust-lang-nursery/rand" } # 来自在线仓库
 bar = { path = "../bar" } # 来自本地文件系统的路径

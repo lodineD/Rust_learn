@@ -22,9 +22,8 @@ fn main() {
     println!("9 以下（不包括 9）的奇数之和：{}", sum_odd_numbers(9));
 }
 
-
-
 */
+#![allow(dead_code)]
 fn foo() -> ! {
     panic!("This call never returns.");
 }

@@ -1,0 +1,16 @@
+[package]
+name = "generics"
+version = "0.1.0"
+edition = "2024"
+authors = ["lodineD"]
+default-run = "gen_fn"
+
+[[bin]]
+name = "gen_fn"
+path = "src/gen_fn.rs"
+
+[[bin]]
+name = "double_drop"
+path = "src/double_drop.rs"
+
+[dependencies]
