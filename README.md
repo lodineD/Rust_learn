@@ -69,7 +69,7 @@
 
 > 纸上得来终觉浅，绝知此事要躬行。
 
-三天时间，把 Rust by Example 从头刷到尾，`hello_world` 到 `generics`，11 个 cargo 项目，基本概念都过了一遍。fmt、枚举、trait、所有权、闭包、模块、泛型、生命周期……每个都"学过"了。
+三天时间，把 Rust by Example 从头刷到尾，`hello_world` 到 `generics`，11 个 cargo 包，基本概念都过了一遍——严格来说这不算项目，只是代码认知，每一行都是照着文档敲的 demo。fmt、枚举、trait、所有权、闭包、模块、泛型、生命周期……每个都"学过"了。
 
 但说实话，trait 和泛型放在一起怎么用？生命周期标注到底什么时候该写、什么时候该省略？闭包的三种 trait 怎么选？这些光靠看 demo 是学不会的。demo 只会告诉你"这样写是对的"，不会告诉你"为什么我那样写会爆 20 个编译错误"。真正的理解，是跟编译器吵出来的——每一次 `error[E0502]`、每一次 `cannot borrow as mutable`、每一次 `does not live long enough`，都是在帮你重新理解"所有权和借用"那几个字到底是什么意思。
 
