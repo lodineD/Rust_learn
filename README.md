@@ -27,7 +27,7 @@
 ### 📅 第三天（2026-08-06）
 
 - **functions**（闭包、高阶函数、发散函数）
-- **modules**（模块 `mod`、可见性 `pub`）
+- **modules**（模块 `mod`、可见性 `pub`、`self`/`super`/`crate`、文件拆分、`use` 导入）
 
 #### 闭包总结
 
