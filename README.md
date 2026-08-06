@@ -65,4 +65,14 @@
 
 私有父模块会限制内部子项的可见性，即使子项标记了 `pub`。不同 bin 之间互相隔离，`pub` 也不能跨 bin 访问。
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&width=435&lines=%E6%AD%A3%E5%9C%A8%E8%BF%9B%E8%A1%8C%E4%B8%AD...)](https://git.io/typing-svg)
+---
+
+> 纸上得来终觉浅，绝知此事要躬行。
+
+三天时间，把 Rust by Example 从头刷到尾，`hello_world` 到 `generics`，11 个 cargo 项目，基本概念都过了一遍。fmt、枚举、trait、所有权、闭包、模块、泛型、生命周期……每个都"学过"了。
+
+但说实话，trait 和泛型放在一起怎么用？生命周期标注到底什么时候该写、什么时候该省略？闭包的三种 trait 怎么选？这些光靠看 demo 是学不会的。demo 只会告诉你"这样写是对的"，不会告诉你"为什么我那样写会爆 20 个编译错误"。真正的理解，是跟编译器吵出来的——每一次 `error[E0502]`、每一次 `cannot borrow as mutable`、每一次 `does not live long enough`，都是在帮你重新理解"所有权和借用"那几个字到底是什么意思。
+
+所以这不是结束，是新的开始。接下来不再逐章刷文档，而是尝试写一些小的东西——也许是一个命令行小工具，也许是一个简单的数据结构，也许是造几个轮子，在实战中与编译器 battle，把"学过"变成"会用"。
+
+**Rust 不会放过任何偷懒，但也从不辜负认真。**
