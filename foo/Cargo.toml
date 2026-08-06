@@ -1,0 +1,10 @@
+[package]
+name = "foo"
+version = "0.1.0"
+edition = "2024"
+authors = ["lodineD"]
+
+[dependencies]
+clap = "2.27.1" # 来自 crates.io
+rand = { git = "https://github.com/rust-lang-nursery/rand" } # 来自在线仓库
+bar = { path = "../bar" } # 来自本地文件系统的路径

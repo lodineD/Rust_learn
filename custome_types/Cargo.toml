@@ -2,6 +2,7 @@
 name = "custome_types"
 version = "0.1.0"
 edition = "2024"
+authors = ["lodineD"]
 default-run = "Enums_linked-list"
 
 [[bin]]
