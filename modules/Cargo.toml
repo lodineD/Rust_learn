@@ -1,0 +1,32 @@
+[package]
+name = "modules"
+version = "0.1.0"
+edition = "2024"
+default-run = "split"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "visibility"
+path = "src/visibility.rs"
+
+[[bin]]
+name = "struct_visibility"
+path = "src/struct_visibility.rs"
+
+[[bin]]
+name = "self_super"
+path = "src/self_super.rs"
+
+[[bin]]
+name = "split"
+path = "src/split.rs"
+
+[[bin]]
+name = "use"
+path = "src/use.rs"
+
+
+[dependencies]

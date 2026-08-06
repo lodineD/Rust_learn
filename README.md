@@ -8,7 +8,7 @@
 |------|---------|
 | **2026-08-04** | 第一天：hello_world、primitives、custome_types、variable_bindings、types、conversion |
 | **2026-08-05** | 第二天：control、functions（基础） |
-| **2026-08-06** | 第三天：functions（闭包与高阶函数） |
+| **2026-08-06** | 第三天：functions（闭包与高阶函数）、modules（模块与可见性） |
 
 ### 📅 第一天（2026-08-04）
 
@@ -27,6 +27,7 @@
 ### 📅 第三天（2026-08-06）
 
 - **functions**（闭包、高阶函数、发散函数）
+- **modules**（模块 `mod`、可见性 `pub`）
 
 #### 闭包总结
 
@@ -48,5 +49,18 @@
 | `[i32; 3]`（数组） | 借用，产生 `&i32` | 不拿所有权，产生 `i32` | ✅ |
 
 数组是 `Copy` 类型，`into_iter()` 不移动所有权；`Vec` 不是 `Copy`，`into_iter()` 会拿走所有权。
+
+#### 模块可见性
+
+| 修饰符 | 可见范围 | 说明 |
+|--------|---------|------|
+| （默认） | 当前模块内 | 私有，外部不可访问 |
+| `pub(self)` | 当前模块内 | 与默认相同 |
+| `pub(super)` | 父模块 | 只在上一层模块可见 |
+| `pub(in crate::xxx)` | 指定路径 | 只在指定的祖先模块内可见 |
+| `pub(crate)` | 当前 crate | 整个 bin/lib 内可见 |
+| `pub` | 全部 | 同一 crate 及外部 crate（对 lib） |
+
+私有父模块会限制内部子项的可见性，即使子项标记了 `pub`。不同 bin 之间互相隔离，`pub` 也不能跨 bin 访问。
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&width=435&lines=%E6%AD%A3%E5%9C%A8%E8%BF%9B%E8%A1%8C%E4%B8%AD...)](https://git.io/typing-svg)
