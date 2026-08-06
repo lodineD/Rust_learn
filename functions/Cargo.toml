@@ -2,7 +2,7 @@
 name = "functions"
 version = "0.1.0"
 edition = "2024"
-default-run = "Closures"
+default-run = "diverging_functions"
 
 [[bin]]
 name = "main"
@@ -15,5 +15,38 @@ path = "src/method.rs"
 [[bin]]
 name = "Closures"
 path = "src/Closures.rs"
+
+[[bin]]
+name = "closures_captures"
+path = "src/closures_captures.rs"
+
+[[bin]]
+name = "closures_as_input"
+path = "src/closures_as_input.rs"
+
+[[bin]]
+name = "closures_anonymity"
+path = "src/closures_anonymity.rs"
+
+[[bin]]
+name = "closures_parameters"
+path = "src/closures_parameters.rs"
+
+[[bin]]
+name = "closures_examples"
+path = "src/closures_examples.rs"
+
+[[bin]]
+name = "closures_examples2"
+path = "src/closures_examples2.rs"
+
+[[bin]]
+name = "higher_Functions"
+path = "src/higher_Functions.rs"
+
+[[bin]]
+name = "diverging_functions"
+path = "src/diverging_functions.rs"
+
 
 [dependencies]
